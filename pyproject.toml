@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pyadbbackup"
+version = "0.1.0"
+description = "Tool to backup android partitions via adb."
+authors = ["RuslanUC <dev_ruslan_uc@protonmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pure-python-adb = "^0.3.0.dev0"
+click = {version = "^8.1.7", optional = true}
+
+[tool.poetry.extras]
+cli = ["click"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
