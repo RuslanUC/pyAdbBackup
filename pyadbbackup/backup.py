@@ -41,7 +41,7 @@ class AdbBackup:
             blockname = path.split("/")[-1]
             size = int(self._device.shell(f"cat /sys/block/mmcblk0/{blockname}/size")) * bs
 
-            self._partitions[name] = Partition(name, path, size)
+            self._partitions[name] = Partition(name, path, size, self)
 
     def list_partitions(self) -> list[Partition]:
         self._load_partitions()

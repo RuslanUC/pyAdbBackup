@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyadbbackup"
-version = "0.1.1"
+version = "0.1.2"
 description = "Tool to backup android partitions via adb."
 authors = ["RuslanUC <dev_ruslan_uc@protonmail.com>"]
 readme = "README.md"
